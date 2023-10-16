@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DRR Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <h1>DRR Calculator</h1>
+    <form id="drrForm">
+        <table id="task">
+            <tr>
+                <th>Action</th>
+                <th>ID</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Month, Year</th>
+                <th>Dates Excluded</th>
+                <th>Number of Days</th>
+                <th>Lead Count</th>
+                <th>Expected DRR</th>
+                <th>Last Updated</th>
+            </tr>
+            <tr >
+                <td id="action">N/A</td>
+                <td id="idnum"></td>
+                <td><input type="date" id="startDate" value="2023-10-15"></td>
+                <td><input type="date" id="endDate" value="2023-10-20"></td>
+                <td id="monthYear"></td>
+                <td><input type="text" id="datesExcluded" value="10-08,10-20"></td>
+                <td id="numDays"></td>
+                <td><input type="number" id="leadCount" value="8000"></td>
+                <td id="expectedDRR">0</td>
+                <td id="lastUpdate"> </td>
+            </tr>
+            
+        </table>
+        <br>
+        <button type="button" class="button-10" onclick="calculateDDR()">Calculate DRR</button>
+        <button type="button" class="button-10" onclick="addDRR()">Submit</button>
+    </form>
+
+    
+
+    <script src="script.js"></script>
+    
+    
+</body>
+
+</html>
